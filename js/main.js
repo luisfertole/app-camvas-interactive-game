@@ -288,12 +288,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // UI Management
     function showGameOver() {
         showMessage('game-over', `
-            <h2>¡Game Over!</h2>
-            <p>Tu puntuación: ${score}</p>
-            <p>Nivel alcanzado: ${currentLevel}</p>
-            <p>Presiona "Reiniciar" para jugar de nuevo</p>
+            <h2 style="color: black;">¡Game Over!</h2>
+            <p style="color: black;">Tu puntuación: ${score}</p>
+            <p style="color: black;">Nivel alcanzado: ${currentLevel}</p>
+            <p style="color: black;">Presiona "Reiniciar" para jugar de nuevo</p>
         `);
     }
+    
 
     function showMessage(className, html, autoRemove = 0) {
         const messageDiv = document.createElement('div');
